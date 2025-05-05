@@ -1,24 +1,27 @@
 import { useEffect, useState } from "react"
+import logoChrome from "/src/assets/logo-chrome.svg"
+import logoOpera from "/src/assets/logo-opera.svg"
+import logoFirefox from "/src/assets/logo-firefox.svg"
 export default function CallToAction(){
     const extensions = [
         {
             id: 0,
             title: "Add to Chrome",
-            image: "/src/assets/logo-chrome.svg",
+            image: logoChrome,
             link: "https://www.google.com",
             version: "Minimum Version 1.0.0"
         },
         {
             id: 1,
             title: "Add to Firefox",
-            image: "/src/assets/logo-firefox.svg",
+            image:logoFirefox,
             link: "https://www.google.com",
             version: "Minimum Version 1.0.0"
         },
         {
             id: 2,
             title: "Add to Opera",
-            image: "/src/assets/logo-opera.svg",
+            image:logoOpera,
             link: "https://www.google.com",
             version: "Minimum Version 1.0.0"
         },

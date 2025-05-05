@@ -1,3 +1,4 @@
+import heroIllustration from '/src/assets/illustration-hero.svg'
 export default function Hero(){
     return(
         <div className="hero flex   flex-col gap-16 md:items-center lg:flex-row pt-32 md:pt-16 ">
@@ -11,7 +12,7 @@ export default function Hero(){
                 </div>
             </div>
             <div className="hero-images  ">
-                <img src="/src/assets/illustration-hero.svg" alt="hero" className="hero-image mb-[-25px] lg:mb-[-50px] lg:ml-[50px]"/>   
+                <img src={heroIllustration} alt="hero" className="hero-image mb-[-25px] lg:mb-[-50px] lg:ml-[50px]"/>   
             </div>
 
         </div>

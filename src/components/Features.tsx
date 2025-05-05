@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import firstFeatureIllustration from "/src/assets/illustration-features-tab-1.svg"
+import secondFeatureIllustration from "/src/assets/illustration-features-tab-2.svg"
 export default function Features(){
     const [activeTab, setActiveTab] = useState(1);
     const tabs = [
@@ -7,8 +8,8 @@ export default function Features(){
             id: 1,
             title: "Simple Bookmarking",
             description: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-            image: "/src/assets/illustration-features-tab-1.svg",
-            link: "https://www.google.com"
+            image: firstFeatureIllustration,
+            link: secondFeatureIllustration
         },
         {
             id: 2,

@@ -1,6 +1,9 @@
 
 import { useState, useEffect } from "react";
-
+import logo from "/src/assets/logo-bookmark.svg";
+import iconHamburger from "/src/assets/icon-hamburger.svg"
+import iconClose from "/src/assets/icon-close.svg"
+import logoPhone from "/src/assets/logo-nav-phone.svg"
 export default function Header() {
     const [isOpen, setIsOpen] = useState(true);
     const [isMobile, setIsMobile] = useState(false);
@@ -25,8 +28,8 @@ export default function Header() {
                     <header style={{background: "rgb(37, 43, 70, 0.95)"}} className="header flex flex-col items-center justify-start  text-[14px] uppercase fixed  w-screen h-screen px-4">
                         <div className="container flex flex-col  align-center justify-between">
                             <div className="logo flex items-center py-8  border-b-gray-500 justify-between border-b-[1px]">
-                                <img src="/src/assets/logo-nav-phone.svg" alt="logo" className="" />
-                                <img  onClick={()=> setIsOpen(false)} src="/src/assets/icon-close.svg" className="cursor-pointer" alt="" />
+                                <img src={logoPhone} alt="logo" className="" />
+                                <img  onClick={()=> setIsOpen(false)} src={iconClose} className="cursor-pointer" alt="" />
                             </div>
                             <nav className="nav flex justify-center" >
                                 <ul className="w-full items-center gap-16 text-white tracking-[5px] text-xl font-[300]  flex-col ">
@@ -45,8 +48,8 @@ export default function Header() {
         else{
             return(
                 <header className="py-8 bg-white fixed flex w-screen px-4 flex items-center justify-between">
-                    <img src="/src/assets/logo-bookmark.svg" alt="" />
-                     <img src="/src/assets/icon-hamburger.svg"onClick={()=> setIsOpen(true)} alt="" className="cursor-pointer" />
+                    <img src={logo} alt="" />
+                     <img src={iconHamburger} onClick={()=> setIsOpen(true)} alt="" className="cursor-pointer" />
     
                 </header>
             )
