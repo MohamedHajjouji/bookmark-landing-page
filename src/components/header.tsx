@@ -61,7 +61,7 @@ export default function Header() {
              <header className="header uppercase max-w-[1440px] px-[100px] py-12 ">
                         <div className="container flex  align-center min-w-full  justify-between">
                             <div >
-                                <img src="/src/assets/logo-bookmark.svg" alt="logo"  />
+                                <img src={logo} alt="logo"  />
                                
                             </div>
                             <nav className="nav flex " >
